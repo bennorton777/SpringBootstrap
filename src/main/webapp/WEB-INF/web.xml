@@ -6,6 +6,8 @@
 
     <display-name>Spring Web MVC Application</display-name>
 
+    <!--Telling spring about our servlet dispatcher.  In simple language, the servlet dispatcher handles some of the
+    bookkeeping involved with routing http requests and responses from the server-->
     <servlet>
         <servlet-name>mvc-dispatcher</servlet-name>
         <servlet-class>
@@ -14,6 +16,7 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
 
+    <!--Telling spring more stuff about our servlet dispatcher, namely what urls to route into our app-->
     <servlet-mapping>
         <servlet-name>mvc-dispatcher</servlet-name>
         <url-pattern>/*</url-pattern>

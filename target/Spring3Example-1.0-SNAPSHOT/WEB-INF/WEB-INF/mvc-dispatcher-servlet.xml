@@ -10,12 +10,18 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
 
+    <!--Telling spring where our controllers live-->
     <context:component-scan base-package="com.ben.example" />
 
+    <!--Giving Spring an object it can use to configure the retrieval of Velocity templates.  Only one property here,
+    just telling spring where the templates live-->
     <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
         <property name="resourceLoaderPath" value="WEB-INF/velocity/"/>
     </bean>
 
+    <!--Here's where we tell spring what class to use to actually resolve views.  There are some config parameters
+    here too, the most interesting one being the file extension.  (This is the suffix, it's implicitly added
+    to the end of any template names you give spring-->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
         <property name="cache" value="true"/>
         <property name="prefix" value=""/>

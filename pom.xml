@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 	http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.mkyong.core</groupId>
+    <groupId>com.ben.core</groupId>
     <artifactId>Spring3Example</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Spring3Example</name>
@@ -16,7 +16,11 @@
 
     <dependencies>
 
-        <!-- Spring 3 dependencies -->
+        <!-- Spring 3 dependencies
+       Note that some of these jars are copied into src/main/webapp/WEB-INF/lib
+       This is done because at runtime Jetty doesn't know where the maven dependencies live.
+       There is almost certainly a prettier way to do this, I just don't know what it is
+       -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -56,6 +60,7 @@
     </dependencies>
     <build>
         <plugins>
+            <!--Jetty plugin, spins up a jetty instance and injects this spring app into it. -->
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>maven-jetty-plugin</artifactId>
@@ -71,6 +76,8 @@
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                 </configuration>
             </plugin>
+            <!-- This plugin tells maven how to package the spring app as a WAR, which is the standard format
+             for webservers-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>

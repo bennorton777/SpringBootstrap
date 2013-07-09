@@ -6,6 +6,10 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!--This spring xml file does nothing for the webpage/velocity template stuff.  It might be necessary to have a
+    spring project at all, even if there are no defined beans, but I doubt it.  It remains in case we decide to talk
+     about awesome autowiring stuff, which you may end up needing later for more complex springification -->
+
     <bean id="helloBean" class="main.java.com.ben.example.HelloWorld">
         <property name="name" value="Mkyong" />
     </bean>
