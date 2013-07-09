@@ -4,8 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.mvc.condition.ProducesRequestCondition;
-import org.springframework.web.servlet.view.velocity.VelocityLayoutView;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,8 +24,8 @@ public class HelloWorldPageResource {
     }
 
     @RequestMapping(value="world", method = RequestMethod.GET)
-    public VelocityLayoutView returnHelloWorldTemplate() {
-
+    public String returnHelloWorldTemplate() {
+        return "someTemplate";
     }
 
 }
