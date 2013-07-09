@@ -9,6 +9,5 @@
     <bean id="helloBean" class="main.java.com.ben.example.HelloWorld">
         <property name="name" value="Mkyong" />
     </bean>
-    <context:component-scan base-package="com.ben.example" />
 
 </beans>

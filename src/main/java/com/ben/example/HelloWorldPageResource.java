@@ -3,6 +3,9 @@ package com.ben.example;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.condition.ProducesRequestCondition;
+import org.springframework.web.servlet.view.velocity.VelocityLayoutView;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,8 +20,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HelloWorldPageResource {
 
     @RequestMapping(method = RequestMethod.GET)
+    @ResponseBody
     public String returnHelloWorldString() {
         return "BEST WEBPAGE EVAR";
+    }
+
+    @RequestMapping(value="world", method = RequestMethod.GET)
+    public VelocityLayoutView returnHelloWorldTemplate() {
+
     }
 
 }
