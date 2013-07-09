@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00fa3a4e-cbfc-465a-b12e-6d0ad9f7e290" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity/someTemplate.vm" />
-      <change type="DELETED" beforePath="C:\work\SpringBootstrap\src\main\resources\velocity.vm" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ben/example/HelloWorldPageResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/ben/example/HelloWorldPageResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring3Example.iml" afterPath="$PROJECT_DIR$/Spring3Example.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity/someTemplate.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity/someTemplate.vm" />
     </list>
     <ignored path="Spring3Example.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="00fa3a4e-cbfc-465a-b12e-6d0ad9f7e290" time="1373332829711" ignored="false" />
     <file path="/pom.xml" changelist="00fa3a4e-cbfc-465a-b12e-6d0ad9f7e290" time="1373333952639" ignored="false" />
-    <file path="/HelloWorldPageResource.java" changelist="00fa3a4e-cbfc-465a-b12e-6d0ad9f7e290" time="1373336068892" ignored="false" />
+    <file path="/HelloWorldPageResource.java" changelist="00fa3a4e-cbfc-465a-b12e-6d0ad9f7e290" time="1373339808853" ignored="false" />
     <file path="/velocity.vm" changelist="00fa3a4e-cbfc-465a-b12e-6d0ad9f7e290" time="1373336003085" ignored="false" />
     <file path="/mvc-dispatcher-servlet.xml" changelist="00fa3a4e-cbfc-465a-b12e-6d0ad9f7e290" time="1373337570312" ignored="false" />
     <file path="/dispatcher-servlet.xml" changelist="00fa3a4e-cbfc-465a-b12e-6d0ad9f7e290" time="1373338857863" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="00fa3a4e-cbfc-465a-b12e-6d0ad9f7e290" time="1373339825999" ignored="false" />
+    <file path="/someTemplate.vm" changelist="00fa3a4e-cbfc-465a-b12e-6d0ad9f7e290" time="1373339474741" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <file leaf-file-name="HelloWorldPageResource.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ben/example/HelloWorldPageResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="28" selection-start="782" selection-end="782" vertical-scroll-proportion="0.46681923">
+            <state line="31" column="42" selection-start="899" selection-end="899" vertical-scroll-proportion="0.46681923">
               <folding />
             </state>
           </provider>
@@ -109,7 +105,7 @@
       <file leaf-file-name="someTemplate.vm" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity/someTemplate.vm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="26" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
+            <state line="3" column="6" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,6 +154,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity/someTemplate.vm" />
         <option value="$PROJECT_DIR$/src/main/java/com/ben/example/HelloWorldPageResource.java" />
       </list>
     </option>
@@ -654,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity/someTemplate.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="26" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="65" selection-start="1168" selection-end="1168" vertical-scroll-proportion="-16.32">
@@ -668,9 +658,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/velocity/someTemplate.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ben/example/HelloWorldPageResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="28" selection-start="782" selection-end="782" vertical-scroll-proportion="0.46681923">
+        <state line="31" column="42" selection-start="899" selection-end="899" vertical-scroll-proportion="0.46681923">
           <folding />
         </state>
       </provider>

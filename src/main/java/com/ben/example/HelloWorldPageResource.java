@@ -1,9 +1,13 @@
 package com.ben.example;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,7 +28,8 @@ public class HelloWorldPageResource {
     }
 
     @RequestMapping(value="world", method = RequestMethod.GET)
-    public String returnHelloWorldTemplate() {
+    public String returnHelloWorldTemplate(ModelMap model) {
+        model.addAttribute("name", "Ben");
         return "someTemplate";
     }
 
